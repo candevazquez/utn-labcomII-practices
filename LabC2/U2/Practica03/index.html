@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #aaaaaa;
+        }
+
+        div.container {
+            overflow: auto;
+        }
+
+        header {
+            background-color: #e5e5e5;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        nav ul {
+            padding-left: 0px;
+        }
+
+        nav li {
+            list-style: none;
+        }
+
+        nav li a {
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+            font-weight: 700;
+        }
+
+        main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+        }
+
+        .right {
+            background-color: #e5e5e5;
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #e5e5e5;
+            text-align: center;
+            padding: 10px;
+            margin-top: 7px;
+        }
+
+        /* For mobile phones: */
+        @media only screen and (max-width: 620px) {
+
+            nav,
+            main,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Mi página web</h1>
+        <p>¡Gracias por visitar mi pagina!</p>
+    </header>
+    <div class="container">
+        <!-- Navegación / cotenedor izquierdo -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Contenedor principal -->
+        <main>
+            <section>
+                <h2>Noticias Espectaculo</h2>
+                <h4>Taylor Swift hizo una película de su gira por Estados Unidos y ya tiene tráiler</h4>
+                <p>
+                    La cantante generó un registro audiovisual del comienzo de su épico épico "Eras Tour", 
+                   con el que recorrerá cuatro continentes y llegará en noviembre a la Argentina. 
+                   <a target="_blank" href="https://www.lacapital.com.ar/zoom/taylor-swift-hizo-una-pelicula-su-gira-estados-unidos-y-ya-tiene-trailer-n10086249.html">
+                    Ver noticia completa aqui</a>
+                </p>
+
+                <h4>Un fin de semana para celebrar la magia en el Mercado del Patio</h4>
+                <p>
+                    La sexta edición del Festival de Magia se realizará este sábado y el domingo. Habrá shows y talleres para niños y adultos. 
+                    <a target="_blank" href="https://www.lacapital.com.ar/zoom/un-fin-semana-celebrar-la-magia-el-mercado-del-patio-n10086127.html">
+                        Ver noticia completa aqui
+                    </a>
+                </p>
+            </section>
+            <section>
+                <h2>Noticias Economia</h2>
+                <h4>Avanza el proyecto para que los consumidores no se separen de sus tarjetas cuando hacen compras</h4>
+                <p>
+                    Con acuerdo de oficialismo y oposición, el Senado dejó lista para poder votarse esta iniciativa de la senadora Clara 
+                    Vega que obliga a los comercios a manipular el posnet a la vista de los consumidores. <a target="_blank"
+                    href="https://www.lacapital.com.ar/economia/avanza-el-proyecto-que-los-consumidores-no-se-separen-sus-tarjetas-cuando-hacen-compras-n10086161.html">Ver noticia completa aqui</a>
+                </p>
+
+                <h4>Personal, Movistar y Claro aseguran que con las condiciones aprobadas es "imposible" el despliegue del 5G</h4>
+                <p>
+                    Las tres grandes empresas de telecomunicaciones sacaron un comunicado conjunto y piden que se revisen los pliegos de la subasta.
+                    <a target="_blank" href="https://www.lacapital.com.ar/economia/personal-movistar-y-claro-aseguran-que-las-condiciones-aprobadas-es-imposible-el-despliegue-del-5g-n10086165.html"> Ver noticia completa aqui</a>
+                </p>
+            </section>
+        </main>
+        <!-- Contenedor secundario / derecho -->
+        <div class="right">
+            <h2>Info</h2>
+            <p>Esta pagina corresponde al trabajo practico numero 3 de la unidad 2 de la materia laboratorio de computacion 2</p>
+        </div>
+    </div>
+    <!-- Pie de Página-->
+    <footer>
+        <p>© copyright candela.com</p>
+        <p>pagina creada por candela vazquez</p>
+
+
+</body>
+
+</html>
