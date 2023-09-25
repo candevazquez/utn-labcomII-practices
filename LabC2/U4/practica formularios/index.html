@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var limpiar = function () {
+
+        }
+
+        var enviar = function () {
+            var codigo = document.getElementById('codigo').value;
+            var nombre = document.getElementById('nombre').value;
+            var editorial = document.getElementById('editorial').value;
+            var año = document.getElementById('año').value;
+            var nomape = document.getElementById('nomape').value;
+            
+            if (nombre === "" || codigo === "" || editorial === "" || año === "" || nomape === "" ) {
+                alert('debe completar todos los campos');
+            }
+          
+        }
+
+    </script>
+</head>
+
+<body>
+    <!--Confeccionar un formulario en HTML en donde puedan hacer la carga de un
+ejemplar de algún libro y luego realizar las validaciones con javascript.
+
+Para ello tener en cuenta qué tipo de campo van a utilizar en cada caso y
+además al hacer click en el botón enviar van a tener que verificar que ninguno
+de los campos haya quedado en blanco.-->
+
+    <div>
+        <form>
+            <label for="codigo">ingrese codigo del libro</label>
+            <input type="number" id="codigo" name="codigo"> <br>
+
+            <label for="nombre">ingrese nombre del libro</label>
+            <input type="text" id="nombre" name="nombre"> <br>
+
+            <label for="selecc">tipo novela</label>
+            <select name="selecc" id="selecc">
+                <option value="novela">novela</option>
+                <option value="teatro">teatro</option>
+                <option value="poesia">poesia</option>
+                <option value="ensayo">ensayo</option>
+            </select> <br>
+
+            <label for="editorial">editorial</label>
+            <input type="text" id="editorial" name="editorial"> <br>
+
+            <label for="año">año</label>
+            <input type="number" name="año" id="año"> <br>
+
+            <label for="nomape">ingrese nombre y apellido del autor</label>
+            <input type="text" name="nomape" id="nomape"> <br>
+
+            <input type="button" value="limpiar" onclick="limpiar();">
+            <input type="button" value="enviar" onclick="enviar();">
+
+        </form>
+    </div>
+
+</body>
+
+</html>

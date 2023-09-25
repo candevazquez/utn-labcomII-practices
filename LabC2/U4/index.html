@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cont = 0; //se pone arriba para que no se limpie
+        var fncContar = function(){
+
+            cont += 1;
+            document.getElementById('idContador').innerText = cont;
+            
+            return cont;  //para que devuelva
+
+            
+
+        }
+
+
+        var fnValidar = function(){
+            let txNombre_f = document.getElementById('txNombre');
+            let txArea_f = document.getElementById('txArea');
+
+           // fncContar();
+
+            txNombre_f.value='texto nuevo. Contador' + fncContar();
+            txArea_f.value = 'cande'
+        }
+
+        var fncValidar2 = function(){
+            var chOpc = document.getElementsByName('opc')
+
+            var i;
+            var stringResultado;
+
+            for(var i=0; i<chOpc.length; i++){
+                stringResultado += chOpc[i].value + ', esta seleccionado?' + chOpc[i].checked + '||';
+
+
+            }
+            document.getElementById('idcontador').innerHTML = stringResultado;
+
+        }
+
+        var fncValidar3 = function(){
+
+            var selOpc
+        }
+    </script>
+</head>
+<body>
+    
+    <hr>
+    <h2>contador</h2>
+    <div id="idContador"></div>
+
+
+    <hr>
+    <h2>formulario</h2>
+    <form name="frmPrincipal">
+        <input type="text" id="txNombre" name="txnombre">
+        <textarea name="txArea" id="txArea" cols="5" rows="5">hola</textarea>
+        <br>
+        <br>
+        <input type="button" value="validar" onclick="fnValidar();">
+
+        <br><br>
+        <input type="radio" value="si" name="opc" id="opc1">si
+        <input type="radio" value="no" name="opc" id="opc2">no
+        <input type="button" value="validar2" onclick="fncValidar2();">
+
+        <br><br>
+
+        <select name="selOpc" id="selOpc">
+            <option value="1">opcion1</option>
+            <option value="2">opcion2</option>
+            <option value="3">opcion3</option>
+        </select>
+        <br>
+        <input type="button" value="">
+    </form>
+
+
+
+
+    <input type="button" value="sumar" onclick="fncContar();">
+    
+</body>
+</html>
