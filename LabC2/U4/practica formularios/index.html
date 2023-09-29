@@ -19,7 +19,14 @@
             var nomape = document.getElementById('nomape').value;
             
             if (nombre === "" || codigo === "" || editorial === "" || año === "" || nomape === "" ) {
-                alert('debe completar todos los campos');
+                document.getElementById('parrafo').innerHTML = "deben completarse todos los campos"
+            }
+            else if(codigo < 0 || año < 1900){
+
+                document.getElementById('parrafo').innerHTML = "campo numerico incorrecto"
+            }
+            else{
+                document.getElementById('parrafo').innerHTML = "enviado"
             }
           
         }
@@ -28,12 +35,6 @@
 </head>
 
 <body>
-    <!--Confeccionar un formulario en HTML en donde puedan hacer la carga de un
-ejemplar de algún libro y luego realizar las validaciones con javascript.
-
-Para ello tener en cuenta qué tipo de campo van a utilizar en cada caso y
-además al hacer click en el botón enviar van a tener que verificar que ninguno
-de los campos haya quedado en blanco.-->
 
     <div>
         <form>
@@ -65,6 +66,8 @@ de los campos haya quedado en blanco.-->
 
         </form>
     </div>
+
+    <p id="parrafo"></p>
 
 </body>
 
