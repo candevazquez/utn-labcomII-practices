@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+    <form action=""> <!--vacio para que no haga submit-->
+        <select name="selector-ciudad" id="selector-ciudad" onchange="consultarCiudad();">
+            <option value="-" selected disabled>Seleccione una opcion</option>
+            <option value="ROSARIO">Rosario</option>
+            <option value="TOKIO">Tokio</option>
+            <option value="AMSTERDAM">Amsterdam</option>
+            <option value="CANCUN">Cancun</option>
+        </select>
+       
+    </form>
+
+    <div id="card">
+        Clima 1
+
+    </div>
+
+    <div id="card2">
+        Clima 2
+
+    </div>
+    
+</body>
+</html>
