@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <form action="">
+        <label for="pesos">cantidad de pesos argentinos</label>
+        <input type="number" name="pesos" id="pesos">
+
+        <select name="monExtr" id="monExtr">
+            <option disabled selected value="0"> -- Seleccione una opción -- </option>
+            <option value="dolar">dolar</option>
+            <option value="euro">euro</option>
+        </select>
+
+        <button type="button" onclick="calcular()">calcular</button>
+
+    </form>
+    <div id="mostrar">
+
+    </div>
+
+    <!--
+        ● Campo de entrada para nombre de la moneda a agregar.
+● Campo de entrada para costo de conversión en pesos de la nueva moneda.
+● Botón para efectuar la operación.
+    -->
+    <form action="">
+        <label for="nombre">nombre de la moneda nueva</label>
+        <input type="text" id="nombre">
+
+        <label for="costo">costo de conversión en pesos</label>
+        <input type="number" name="costo" id="costo">
+
+        <button type="button" onclick="agregarMoneda()">agregar</button>
+
+        
+    </form>
+
+</body>
+
+</html>
